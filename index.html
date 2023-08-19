@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora de Propina</title>
+</head>
+<body>
+
+   
+        
+    <div class="calculator">
+        <h1>Calculadora de Propina</h1>
+        <p>Ingresa el valor de la cuenta - Propina opcional</p>
+        <hr>
+        <label for="valorpago" class="valorpago">Monto de la cuenta:</label>
+        <input type="number" id="valorpago" step="0.01" required>
+        
+        <label for="tipPorcentage" class="tipPorcentage">Porcentaje de propina:</label>
+        <input type="number" id="tipPorcentage" step="1" required>
+
+      
+        <button id="calculobtn" class="calculobtn"><b style="color: green;">Calcular</b></button>
+        <button id="btnborrar" class="btnborrar"><b style="color: green;">Borrar</b></button>
+        <hr>
+        
+        <div id="resultado" class="hidden">
+            <p>Total a pagar (Incluyendo propina): <span id="totalmonto"></span></p>
+        </div>
+    </div>
+    
+
+    <script src="Js/script.js"></script>
+</body>
+</html>
+
